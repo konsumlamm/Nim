@@ -373,6 +373,7 @@ when not defined(js): # C
     runnableExamples:
       doAssert almostEqual(sqrt(4.0), 2.0)
       doAssert almostEqual(sqrt(1.44), 1.2)
+      echo sqrt(-4.0)
       doAssert sqrt(-4.0).isNaN
   func cbrt*(x: float32): float32 {.importc: "cbrtf", header: "<math.h>".}
   func cbrt*(x: float64): float64 {.importc: "cbrt", header: "<math.h>".} =
